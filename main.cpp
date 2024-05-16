@@ -230,7 +230,7 @@ private:
         // Generate coins randomly on the map
         for (int i = 0; i < map.size(); ++i) {
             for (int j = 0; j < map[i].size(); ++j) {
-                if (map[i][j] != '#' && QRandomGenerator::global()->bounded(100) < 1) {
+                if (map[i][j] != '#' && QRandomGenerator::global()->bounded(100) < 3) {
                     // Check if this position should have a coin (34% chance)
                     // If so, add a coin at this position
                     coins.append(QPoint(i, j));
